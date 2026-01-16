@@ -4,7 +4,7 @@ from scapy.all import sniff, IP, TCP, UDP
 
 CSV_FILE = "data/traffic.csv"
 
-# write CSV header once
+
 with open(CSV_FILE, "w", newline="") as f:
     writer = csv.writer(f)
     writer.writerow(["time", "src_ip", "dst_ip", "protocol", "length"])
